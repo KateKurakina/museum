@@ -1,0 +1,180 @@
+.button {
+  @extend %font-roboto;
+  @include font(22px, normal, 300, 26px, 2px, none);
+  border: none;
+  color: $color-font-white;
+}
+
+//welcome_button
+
+.button_colored {
+  padding: 0 64px;
+  height: 75px;
+  width: 360px;
+  background: $color-dark-red;
+  border-radius: 10px;
+  transition: 1s;
+  &:hover {
+      background: $color-font-gold;
+    }
+}
+.welcome_link {
+  text-decoration: none;
+  color: $color-font-white;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//ticket_button
+
+.button_dark {
+  padding: 0 37px;
+  height: 50px;
+  background: $color-dark;
+  transition: 1s;
+  align-items: center;
+  text-align: center;
+  &:hover {
+        background: $color-font-gold;
+      }
+}
+
+//welcome_slider
+
+.slider-buttons {
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-color: $color-font-white;
+  -webkit-mask-size: cover;
+  transition: 1s;
+  width: 30px;
+  height: 8px;
+  &:hover {
+    background-color: $color-font-gold;
+  }
+  &:active {
+    background-color: $color-active;
+  }
+}
+.button-prev {
+  -webkit-mask-image: url(#{$assetPath}/left.svg);
+}
+.button-next {
+  -webkit-mask-image: url(#{$assetPath}/right.svg);
+}
+
+//video_slider
+
+.video__slider-buttons {
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-color: $color-grey-slider;
+  -webkit-mask-size: cover;
+  transition: 1s;
+  padding: 0;
+  width: 10px;
+  height: 12px;
+  &:hover {
+    background-color: $color-dark-red;
+  }
+}
+.video__button-prev {
+  -webkit-mask-image: url(#{$assetPath}/stroke_left.svg);
+  margin-right: 20px;
+}
+.video__button-next {
+  -webkit-mask-image: url(#{$assetPath}/stroke_right.svg);
+  margin-left: 20px;
+}
+
+//video_big_play
+
+.video_button {
+  position: absolute;
+  top: 33%;
+  left: 42%;
+  background-color: inherit;
+}
+
+//ticket_amount
+
+.button_step {
+  @extend %font-roboto;
+  @include font(32px, normal, normal, 37px, 0, none);
+  background-color: $color-font-white;
+  border: 0 solid $color-dark;
+  height: 38px;
+  padding: 0;
+  text-align: center;
+}
+.button_step_minus{
+  width: 18px;
+  margin: 6px 0 6px 11px;
+}
+.button_step_plus{
+  width: 19px;
+  margin: 6px 11px 6px 0;
+}
+.tickets_button {
+  width: 175px;
+  height: 50px;
+}
+//отключение стрелочек
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
+//popup
+.popup__close {
+  display: flex;
+  align-self: flex-end;
+  margin: 30px 30px 36px 0;
+}
+.popup__close-button {
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-color: $color-bg-dark;
+  -webkit-mask-size: cover;
+  transition: 1s;
+  padding: 0;
+  width: 25px;
+  height: 25px;
+  &:hover {
+    background-color: $color-active;
+  }
+  -webkit-mask-image: url(#{$assetPath}/close.svg);
+}
+.entry_step-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-bg-dark;
+  width: 35px;
+  height: 25px;
+  padding: 0;
+  border: 0;
+  font-size: 18px;
+  color: $color-font-white;
+  cursor: pointer;
+  &:hover {
+    color: $color-font-gold;
+  }
+}
+.entry_button-minus {
+  padding: 12px 12px 11px 13px;
+}
+.entry_button-plus {
+  padding: 8px 13px 7px 12px;
+}
+
+
+

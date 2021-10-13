@@ -1,0 +1,23 @@
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+}
+body {
+  @extend %font-reg;
+  width: 100%;
+  height: 100%;
+}
+h2 {
+  @extend %font-reg;
+  @include font(80px, normal, normal, 90px, 5px, uppercase);
+  margin: 0;
+}
+h3{
+  @extend %font-reg;
+  @include font(32px, normal, normal, 35px, 5px, uppercase);
+  color: #000000;
+  height: 35px;
+  margin: 25px 0 10px;
+  transition: 1s;
+}
