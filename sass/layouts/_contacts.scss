@@ -1,0 +1,36 @@
+.contacts__container {
+  padding: 75px 0 74px;
+}
+.contacts__block {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts__content {
+  max-width: 282px;
+  margin: 0 198px 0 0;
+}
+.contacts__content-title {
+  @extend %font-roboto;
+  @include font(28px, normal, 500px, 33px, 0, none);
+  width: 227px;
+  margin: 0 0 50px;
+}
+.contacts-link {
+  text-decoration: none;
+  color: $color-dark;
+  transition: 1s;
+  &:hover {
+      color: $color-font-gold;
+  }
+  &:active {
+        color: $color-active;
+    }
+}
+.contacts__content-info {
+  @extend %font-roboto;
+  @include font(22px, normal, 300px, 26px, 0, none);
+  margin: 0 0 25px;
+}
+.contacts__content-info:last-of-type {
+  margin: 0;
+}

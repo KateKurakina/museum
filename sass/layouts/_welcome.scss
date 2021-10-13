@@ -1,0 +1,93 @@
+.welcome {
+  display: flex;
+}
+.welcome__container {
+  display: flex;
+  align-items: center;
+}
+.welcome__content {
+  position: relative;
+  float: left; //Совмещение колонок по горизонтали
+  width: 598px;
+  z-index: 2; //для того чтобы наложить текст на фото
+  margin-top: 150px;
+  margin-bottom: 272px;
+}
+.welcome_title {
+  width: 598px;
+  height: 180px;
+  margin: 0;
+}
+.welcome_paragraph {
+  @extend %font-roboto;
+  @include font(28px, normal, 300, 33px, 2px, none);
+  color: $color-font-white;
+  width: 445px;
+  margin: 25px 0 75px;
+}
+.welcome_item {
+  display: none;
+  position: relative;
+  float: left;
+  left: -158px; //Сдвиг слоя влево
+  z-index: 1;
+  animation: 0.3s ease-in-out;
+  height: 750px;
+}
+.active,
+.next {
+  display: block;
+}
+.welcome__slider {
+  display: grid;
+  justify-items: end;
+  height: 810px;
+}
+.welcome__slider-controls{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  width: 600px;
+  height: 120px;
+  position: relative;
+  float: left;
+  left: -158px;
+  z-index: 2;
+  top: -60px;
+}
+.counter {
+  display: flex;
+  justify-content: space-between;
+  @extend %font-roboto;
+  @include font(22px, normal, normal, 40px, 0, uppercase);
+  color: $color-font-white;
+  width: 76px;
+  margin-left: 74px;
+}
+.dots {
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+}
+.dot {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  background-color: $color-font-white;
+  transition: 1s;
+  &:hover {
+    background-color: $color-font-gold;
+  }
+  &:active {
+    background-color: $color-active;
+  }
+}
+.dot_active {
+  background-color: $color-dot-active;
+}
+.welcome__slider-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+}

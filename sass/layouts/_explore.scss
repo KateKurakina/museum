@@ -1,0 +1,32 @@
+.explore {
+  padding: 75px 0;
+  display: flex;
+}
+.explore__container {
+  display: flex;
+  justify-content: space-between;
+}
+.explore__content {
+  width: 660px;
+}
+.explore_title {
+  height: 90px;
+}
+.explore_par {
+  @extend %font-roboto;
+  @include font(22px, normal, 300, 38px, 0, none);
+  color: $color-font-white;
+  margin: 0 0 25px;
+  height: 77px;
+  width: 660px;
+}
+.explore__image {
+  margin: 15px 0 0 60px;
+}
+.explore_par:last-of-type {
+  margin-bottom: 0;
+}
+.explore_colored {
+  color: $color-par;
+}
+

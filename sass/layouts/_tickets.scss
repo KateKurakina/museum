@@ -1,0 +1,115 @@
+.tickets_container {
+  padding: 75px 0;
+}
+.tickets_block {
+  display: flex;
+  justify-content: space-between;
+}
+.tickets_buy {
+  margin-left: 60px;
+  display: flex;
+}
+.tickets__type {
+  width: 270px;
+  margin-right: 215px;
+}
+.tickets_title {
+  @extend %font-roboto;
+  @include font(28px, normal, bold, 33px, 0, none);
+  margin-bottom: 25px;
+  height: 33px;
+}
+input[type="radio"]:checked,
+input[type="radio"]:not(:checked)
+{
+  position: absolute;
+  opacity: 0;
+}
+
+input[type="radio"]:checked + label,
+input[type="radio"]:not(:checked) + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 40px;
+  margin-top: 25px;
+  cursor: pointer;
+  @extend %font-roboto;
+  @include font(22px, normal, 300, 26px, 0, none);
+}
+
+input[type="radio"]:checked + label:before,
+input[type="radio"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 13px;
+  height: 13px;
+  border: 2px solid #000000;
+  background-color: #ffffff;
+  border-radius: 100%;
+}
+
+input[type="radio"]:checked + label:after,
+input[type="radio"]:not(:checked) + label:after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+input[type="radio"]:checked + label:after,
+input[type="radio"]:not(:checked) + label:after {
+  left: 5px;
+  top: 10px;
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+  background-color: #000000;
+}
+
+input[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+}
+
+input[type="radio"]:checked + label:after {
+  opacity: 1;
+}
+.tickets__amount {
+  display: grid;
+  justify-items: end;
+  height: 443px;
+}
+.tickets_par {
+  @extend %font-roboto;
+  @include font(22px, normal, 300, 26px, 0, none);
+  width: 150px;
+  height: 26px;
+  left: 0px;
+}
+.tickets_step {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0 10px 0;
+  border: 3px solid $color-dark;
+  height: 50px;
+  width: 150px;
+}
+.tickets_number {
+  @extend %font-roboto;
+  @include font(22px, normal, 300, 26px, 0, none);
+  text-align: center;
+  background-color: $color-font-white;
+  border: 0;
+  padding: 0;
+  width: 85px;
+}
+.tickets_total {
+  @extend %font-roboto;
+  @include font(28px, normal, bold, 33px, 1.65px, none);
+  height: 33px;
+  margin: 40px 0 60px 0;
+}

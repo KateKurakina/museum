@@ -1,0 +1,35 @@
+.line {
+  border-bottom: 3px solid $color-dark-red;
+  width: 1440px;
+  margin: 25px 0 75px 0;
+}
+.visiting_line {
+  border-bottom: 2px solid $color-dark-red;
+  width: 300px;
+  margin-top: 10px;
+  transition: 1s;
+}
+.explore_line {
+  border-bottom: 3px solid $color-dark-red;
+  margin: 25px 0 75px;
+}
+.tickets_line {
+  border-bottom: 3px solid $color-dark-red;
+  margin: 25px 0 75px;
+}
+.contacts_line {
+  border-bottom: 3px solid $color-dark-red;
+  margin: 25px 0 75px;
+}
+.footer_line {
+  border-bottom: 3px solid $color-footer-line;
+  margin: 25px 0 50px 0;
+}
+.booking_title-line {
+  border-bottom: 3px solid $color-popup-line;
+  margin: 10px 0 60px 0;
+}
+.booking-entry_line {
+  border-bottom: 2px solid $color-popup-line;
+  margin: 5px 0 15px 0;
+}
